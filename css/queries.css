@@ -1,0 +1,50 @@
+@media (min-width: 90em) {
+	.four-card-feature {
+		max-width: 130rem;
+		padding: 2rem 3rem;
+		gap: 3rem;
+	}
+
+	.four-card-feature .heading-section {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr 1fr;
+	}
+
+	.cards-section {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.four-card-feature .heading-section .heading,
+	.four-card-feature .heading-section .sentence {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	.four-card-feature .heading-section .heading {
+		font-size: 4rem;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.cards-section .card .icon {
+		margin-top: 5rem;
+	}
+
+	.cards-section .card.supervisor {
+		transform: translateY(50%);
+	}
+
+	.cards-section .card.karma {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.cards-section .card.calculator {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		transform: translateY(50%);
+	}
+}
